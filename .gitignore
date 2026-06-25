@@ -1,0 +1,13 @@
+# Compilados do Java
+*.class
+Bateria/bin/
+
+# Configurações do VS Code e outras IDEs
+Bateria/.vscode/
+.vscode/
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+out/
