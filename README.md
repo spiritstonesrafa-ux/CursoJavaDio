@@ -1,67 +1,65 @@
-# Curso Java DIO - Projeto Baterias 🔋
+# Curso Java DIO - Projetos de Estudo 📚
 
-Este repositório foi criado para armazenar os projetos práticos desenvolvidos durante o **Curso de Java da DIO (Digital Innovation One)**. 
-
-O projeto atual consiste em um sistema de gerenciamento de estoque, precificação e análise técnica de **Baterias Automotivas**, aplicando conceitos fundamentais de **Programação Orientada a Objetos (POO)** em Java.
+Este repositório foi criado para armazenar os projetos práticos desenvolvidos durante o **Curso de Java da DIO (Digital Innovation One)**. Cada pasta representa um projeto focado em conceitos específicos.
 
 ---
 
-## 🛠️ Conceitos de POO Aplicados
+## 📁 Projetos Inclusos
 
-No código desenvolvido, foram exercitados os seguintes pilares e estruturas:
-* **Classes e Objetos**: Definição da estrutura `Bateria` e instanciação dos objetos na classe `Main`.
-* **Encapsulamento**: Atributos definidos como privados (`private`) com acessores e modificadores (`getters` e `setters`) controlando e validando as entradas (ex: validação para evitar preços ou estoques negativos).
-* **Construtor**: Inicialização segura dos objetos com todos os atributos obrigatórios.
-* **Métodos de Negócio (Comportamento)**: Métodos que simulam ações reais do mercado de baterias.
+### 1. Projeto Baterias 🔋 (Pasta `/Bateria`)
+Sistema de gerenciamento de estoque, precificação e análise técnica de **Baterias Automotivas**.
+* **Conceitos de POO:** Classes, atributos privados, construtores, métodos de negócio e encapsulamento (com validação em setters).
+* **Funcionalidades:** Classificação por CCA (Premium, Intermediária, Econômica), cálculo de desconto para PIX, controle de vendas no estoque e comparador de CCA entre baterias.
 
----
-
-## 📊 Funcionalidades do Sistema
-
-O sistema possui regras de negócio específicas para o segmento de baterias:
-
-* **Exibição de Informações (`dadosBateria`)**: Exibe de forma organizada os dados técnicos de cada bateria cadastrada.
-* **Cálculo de Desconto (`descontoPix`)**: Aplica uma porcentagem de desconto dinâmica para pagamentos via PIX.
-* **Classificação Técnica (`verificarPremium` & `recomendar`)**: 
-  * Classifica se uma bateria é **Premium** caso seu CCA (capacidade de arranque a frio) seja maior ou igual a `450`.
-  * Recomenda categorias de uso com base no CCA:
-    * **Premium** (CCA ≥ 450)
-    * **Intermediária** (CCA ≥ 350)
-    * **Econômica** (CCA < 350)
-* **Comparador de Baterias (`compararCca`)**: Compara duas baterias diferentes e aponta qual possui a maior corrente de partida (CCA).
-* **Controle de Vendas (`venderUma`)**: Realiza a baixa automática no estoque, impedindo a venda caso o estoque chegue a zero.
+### 2. Projeto Banco 🏦 (Pasta `/Banco`)
+Simulação de uma **Conta Bancária** dinâmica com regras de limite e taxas.
+* **Conceitos de POO:** Encapsulamento de saldo e limites, condicionais de controle financeiro.
+* **Funcionalidades:** Depósitos, saques comuns, pagamentos de boletos e sistema automático de **Cheque Especial** (com cobrança de 20% de juros sobre o valor utilizado no momento de um depósito posterior para quitação da dívida).
 
 ---
 
-## 💻 Estrutura de Pastas
+## 💻 Estrutura do Repositório
 
 ```bash
-Baterias/
+CursoJavaDio/
+├── Banco/
+│   └── src/
+│       ├── Conta.java      # Lógica da conta bancária
+│       └── Main.java       # Teste das operações bancárias
 ├── Bateria/
-│   ├── src/
-│   │   ├── Bateria.java  # Classe com a lógica de negócio e atributos
-│   │   └── Main.java     # Classe principal de testes e simulações
-└── README.md             # Documentação do projeto
+│   └── src/
+│       ├── Bateria.java    # Lógica do sistema de baterias
+│       └── Main.java       # Teste das operações de estoque
+├── .gitignore              # Filtro de arquivos compilados e IDEs
+└── README.md               # Esta documentação
 ```
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Como Executar os Projetos
 
 ### Pré-requisitos
-* Possuir o **Java JDK 11** (ou superior) instalado na máquina.
-* IDE de sua preferência (VS Code, IntelliJ IDEA, Eclipse).
+* **Java JDK 11** (ou superior) instalado.
+* Terminal de sua preferência.
 
-### Execução via Terminal
-1. Navegue até a pasta do código-fonte:
+### Executando o Projeto Baterias
+1. Vá para o diretório do código-fonte:
    ```bash
    cd Bateria/src
    ```
-2. Compile os arquivos Java:
+2. Compile e execute:
    ```bash
    javac Main.java Bateria.java
+   java Main
    ```
-3. Execute o programa:
+
+### Executando o Projeto Banco
+1. Vá para o diretório do código-fonte:
    ```bash
+   cd Banco/src
+   ```
+2. Compile e execute:
+   ```bash
+   javac Main.java Conta.java
    java Main
    ```
