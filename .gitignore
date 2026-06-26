@@ -3,7 +3,7 @@
 bin/
 out/
 
-# Configurações do VS Code e outras IDEs
+# Configuracoes do VS Code e outras IDEs
 .vscode/
 .settings/
 .classpath
