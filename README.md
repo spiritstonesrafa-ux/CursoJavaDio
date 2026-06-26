@@ -10,6 +10,7 @@ Sistema de gerenciamento de estoque, precificacao e analise tecnica de baterias 
 
 - Conceitos: classes, atributos privados, construtores, metodos de negocio e encapsulamento.
 - Funcionalidades: classificacao por CCA, desconto para PIX, controle de estoque e comparacao entre baterias.
+- Documentacao: [`Bateria/README.md`](Bateria/README.md)
 
 ### 2. Projeto Banco (`/Banco`)
 
@@ -17,6 +18,7 @@ Simulacao de uma conta bancaria com regras de saldo, saque, deposito, boleto e c
 
 - Conceitos: encapsulamento, condicionais, regras de negocio e interacao via terminal.
 - Funcionalidades: depositos, saques, pagamento de boletos e controle de cheque especial.
+- Documentacao: [`Banco/README.md`](Banco/README.md)
 
 ### 3. Projeto Pessoa (`/Pessoa`)
 
@@ -24,6 +26,7 @@ Projeto simples para praticar heranca e encapsulamento com as classes `Pessoa`, 
 
 - Conceitos: classes e objetos, construtores, heranca, encapsulamento e validacao de atributos.
 - Funcionalidades: aniversario, ganho/perda de peso, crescimento, estudo e ensino.
+- Documentacao: [`Pessoa/README.md`](Pessoa/README.md)
 
 ### 4. Projeto Carro (`/carro`)
 
@@ -31,26 +34,31 @@ Simulacao de um carro com controle de marcha, velocidade, direcao e estado ligad
 
 - Conceitos: encapsulamento, metodos, condicionais, switch case e interacao via terminal.
 - Funcionalidades: ligar, desligar, acelerar, reduzir velocidade, trocar marcha, virar e verificar velocidade.
+- Documentacao: [`carro/README.md`](carro/README.md)
 
 ## Estrutura
 
 ```bash
 CursoJavaDio/
 |-- Banco/
+|   |-- README.md
 |   `-- src/
 |       |-- Conta.java
 |       `-- Main.java
 |-- Bateria/
+|   |-- README.md
 |   `-- src/
 |       |-- Bateria.java
 |       `-- Main.java
 |-- Pessoa/
+|   |-- README.md
 |   `-- src/
 |       |-- Main.java
 |       |-- Pessoa.java
 |       |-- Aluno.java
 |       `-- Professor.java
 |-- carro/
+|   |-- README.md
 |   `-- src/
 |       |-- Carro.java
 |       `-- Main.java
