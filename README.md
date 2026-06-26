@@ -25,6 +25,13 @@ Projeto simples para praticar heranca e encapsulamento com as classes `Pessoa`, 
 - Conceitos: classes e objetos, construtores, heranca, encapsulamento e validacao de atributos.
 - Funcionalidades: aniversario, ganho/perda de peso, crescimento, estudo e ensino.
 
+### 4. Projeto Carro (`/carro`)
+
+Simulacao de um carro com controle de marcha, velocidade, direcao e estado ligado/desligado.
+
+- Conceitos: encapsulamento, metodos, condicionais, switch case e interacao via terminal.
+- Funcionalidades: ligar, desligar, acelerar, reduzir velocidade, trocar marcha, virar e verificar velocidade.
+
 ## Estrutura
 
 ```bash
@@ -43,6 +50,10 @@ CursoJavaDio/
 |       |-- Pessoa.java
 |       |-- Aluno.java
 |       `-- Professor.java
+|-- carro/
+|   `-- src/
+|       |-- Carro.java
+|       `-- Main.java
 |-- .gitignore
 `-- README.md
 ```
@@ -71,6 +82,14 @@ java Main
 cd Pessoa
 javac -d bin src\Main.java src\Pessoa.java src\Aluno.java src\Professor.java
 java -cp bin Main
+```
+
+### Projeto Carro
+
+```bash
+cd carro/src
+javac Main.java Carro.java
+java Main
 ```
 
 ## Observacao
